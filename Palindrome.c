@@ -14,7 +14,8 @@ int main()
     {
         printf("True");
     }
-    else {
+    else
+    {
         printf("False");
     }
 }
