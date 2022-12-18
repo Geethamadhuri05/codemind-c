@@ -1,22 +1,14 @@
 #include<stdio.h>
 int main()
 {
-    int n,i,c=0;
+    int n,rev=0,rem;
     scanf("%d",&n);
-    for(i=1;i<=n;i++)
+    while(n)
     {
-        if(n%i==0)
-        {
-             c++;
+        rem=n%10;
+        rev=rev*10+rem;
+        n/=10;
         }
-    }    
-        if(c==2)
-        {
-            printf("prime");
-        }
-        else
-        {
-            printf("not a prime");
-        }
-         return 0;
+        printf("%d",rev);
+        return 0;
 }
